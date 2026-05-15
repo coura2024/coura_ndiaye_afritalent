@@ -10,6 +10,94 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ <!--l'entête-->
+    <header>
+        <!-- Navbar responsive -->
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+             <a href="#" class="navbar-brand d-flex align-items-center">
+              <img src="IMG/logo afri.jpeg" alt="img"  width="100" height="50" class="me-2 rounded"></a>
+
+          <!-- Bouton hamburger (visible sur petits écrans) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+           aria-controls="navMenu" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- menu -->
+         <div class="collapse navbar-collapse" id="menuNav">
+           <ul class="navbar-nav ms-auto">
+             <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
+           <li class="nav-item"><a class="nav-link " href="freelance.html">Freelance</a></li>
+           <li class="nav-item"><a class="nav-link " href="tarifs.html">Tarifs</a></li>
+           <li class="nav-item"><a class="nav-link " href="about.html">À propos</a></li>
+           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
+            <a class="navbar-button" href="#"><button>Rejoindre AfriTalent</button></a>
+           </ul>
+         </div>
+        </div>
+      </nav>
+   </div>
+  </header>
+  <main class="fixed">
+  <div class="container py-5">
+    <h2 class="text-center mb-4 text-info">Contactez-nous</h2>
+    <div class="row">
+      <!--formulaire-->
+      <div class="col-md-6">
+        <form id="contact Form" class="row  g-2">
+          <div class="mb-3">
+            <label >Nom</label>
+            <input type="text" id="nom" class="form-control">
+            <small class="error" id="error-nom"></small>
+          </div>
+          <div class="mb-3">
+            <label >Prenom</label>
+            <input type="text" id="prenom" class="form-control">
+            <small class="error" id="error-prenom"></small>
+          </div>
+          <div class="mb-3">
+            <label >Email</label>
+            <input type="email" id="email" class="form-control" placeholder="nom@gmail.com ">
+            <small class="error" id="error-email"></small>
+          </div>
+          <div class="mb-3">
+            <label>Sujet</label>
+            <select id="sujet" class="form-control">
+              <option value="">Choisir un sujet</option>
+              <option>Freelance</option>
+              <option>Support</option>
+              <option>Entreprise</option>
+            </select>
+            <small class="error" id="error-sujet"></small>
+          </div>
+          <div class="mb-3">
+            <label >Message</label>
+            <textarea class="form-control" id="message" placeholder="votre message"></textarea>
+            <small class="error" id="error-email"></small>
+          </div>
+          <button type="submit" class="btn btn-info text-white">Envoyer</button>
+          <div id="success" class="success"></div>
+        </form>
+          </div>
+      </div>
+      <!--contact--> 
+      <div class="contact" class="col-md-6">
+        <h4 class="text-info mt-5">Informations</h4>
+        <p>Email : contact@afritalent.com</p>
+        <p>Tel : 33 957 33 41</p>
+        <P>Adresse : Mbour, Senegal</P>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62838.05687916857!2d-16.999!3d14.421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1721f7f1b2a3f%3A0x9f8f1c5f6c7c4b9!2sMbour%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2ssn!4v1712400000000!5m2!1sfr!2ssn" width="100%" height="250"
+        style="border: 0;"></iframe>
+      </div>
+  </div>  
+</main>
+<footer>
+   <div class="text-center">
+        <p>&copy;<span id="year"></span>AfriTalent.Tous droits réservés</p>
+      </div>
+</footer>
+
 
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 

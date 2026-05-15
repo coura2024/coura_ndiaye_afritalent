@@ -9,7 +9,159 @@
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body"> 
+  <!--l'entête-->
+    <header>
+        <!-- Navbar responsive -->
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+              <img src="IMG/logo afri.jpeg" alt="img"  width="100" height="50" class="me-2 rounded"></a>
+              
+          <!-- Bouton hamburger (visible sur petits écrans) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- menu -->
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link " href="freelance.html">Freelance</a></li>
+            <li class="nav-item"><a class="nav-link " href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item"><a class="nav-link active"  href="about.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
+            <a class="navbar-button" href="#"><button>Rejoindre AfriTalent</button></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <main class="fixed">
+    <section class="notre-histoire">
+      <div class="notre-histoire-text">
+      <h1><strong></strong>Notre Histoire</strong></h1>
+      <p>AfriTalent est né d'une ambition simple: connecter les freelances<br>
+      africains aux meilleurs opportunités.Nous croyons en un futur
+    où chaque <br>talent peut travailler et atteindre son plein potentiel. </p>
+      </div>
+      <img src="IMG/histoir.jpeg" alt="img" class="histoire-img">
+    </section>
+
+    <!--l'equipe-->
+    <section class="section text-center bg-white">
+      <h2 class="mt-5">Notre équipe</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="card team-card p-3">
+            <img src="IMG/homme3.jpeg" alt="img" class="img-fluid rounded"  class="mx-auto" width="100%" height="250px">
+            <h5>Amadou Diallo</h5>
+            <p>Développeur</p>
+            <div>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card team-card p-3">
+            <img src="IMG/femme4.jpeg" alt="img" class="img-fluid rounded" class="mx-auto" width="100%" height="250px">
+            <h5>Fatou Ndiaye</h5>
+            <p>Designer</p>
+            <div>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-facebook"></i>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card team-card p-2">
+            <img src="IMG/homme4.jpeg" alt="img" class="img-fluid rounded" class="mx-auto" width="100%" height="250px">
+            <h5>Fode Sagna Ndiaye</h5>
+            <p>Data Analyst </p>
+            <div>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3">
+          <div class="card team-card p-3">
+            <img src="IMG/femme5.jpeg" alt="img" class="img-fluid rounded" class="mx-auto" width="100%" height="250px" >
+            <h5>Ndeye Aïda Diouf</h5>
+            <p>CEO</p>
+            <div>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--valeurs-->
+    <section class="section text-center">
+    <h2 class="mt-5">Nos valeurs</h2>
+    <div class="row mt-4">
+      <div class="col-md-3 value">
+        <i class="bi bi-lightbulb"></i>
+        <h5>Innovations</h5>
+        <p>Nous créons des solutions modernes.</p>
+      </div>
+      <div class="row mt-4">
+      <div class="col-md-3 value">
+        <i class="bi bi-people"></i>
+        <h5>Communauté</h5>
+        <p>Nous valorisons l'entraide.</p>
+      </div>
+      <div class="row mt-4">
+      <div class="col-md-3 value">
+        <i class="bi bi-globe"></i>
+        <h5>Accessibilités</h5>
+        <p>Accessible à tous.</p>
+      </div>
+      <div class="row mt-4">
+      <div class="col-md-3 value">
+        <i class="bi bi-star"></i>
+        <h5>Excellence</h5>
+        <p>Nous vivons le meilleur.</p>
+      </div>
+    </div>
+    </section>
+
+    <!--chiffres clés-->
+    <section class="section text-center">
+    <h2 class="mt-5">Chiffres clés</h2>
+    <div class="bento" >
+      <div class="bento-box">
+        <span id="c1">0</span>+
+        <p>Freelances</p>
+      </div>
+      <div class="bento " >
+      <div class="bento-box">
+        <span id="c2">0</span>%
+        <p>Projets</p>
+      </div>
+      <div class="bento " >
+      <div class="bento-box">
+        <span id="c3">0</span>+
+        <p>Satisfactions</p>
+      </div>
+      <div class="bento" >
+      <div class="bento-box">
+        <span id="c4">0</span>+
+        <p>Entreprises</p>
+      </div>
+    </div>
+    </section>
+   </main>
+   <footer>
+     <div class="text-center">
+        <p>&copy;<span id="year"></span>AfriTalent.Tous droits réservés</p>
+      </div>
+   </footer>
 
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 

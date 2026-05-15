@@ -4,12 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriTalent_tarifs</title>
+    <!--boostrap icons-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Bootstrap 5 via CDN : feuille de style --> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
 <!-- Votre feuille de style personnelle --> 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--l'entête-->
+        <header>
+            <!-- Navbar responsive -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="IMG/logo afri.jpeg" alt="img"  width="100" height="50" class="me-2 rounded"></a>
+
+      <!-- Bouton hamburger (visible sur petits écrans) -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+         aria-controls="navMenu" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+      <!-- menu -->
+         <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link " href="freelance.html">Freelance</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item"><a class="nav-link "  href="about.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
+            <a class="navbar-button" href="#"><button>Rejoindre AfriTalent</button></a>
+            </ul>
+         </div>
+         </div>
+      </nav>
+   </div>
+   </header>
+<main class="fixed">
+   <div class="container py-5">
+      <h2 class="text-center text-warning mb-5">Nos tarifs</h2>
+      <div class="row text-center">
+      <!--gratuit-->
+      <div class="col-md-4 mb-4 ">
+         <div class="card pricing-card p-4 bg-white">
+         <h2 class="text-warning ">Gratuit</h2>
+         <h4 class="text-warning">0£/mois</h4>
+         <ul class="list-unstyled features mt-3">
+            <li><i class="bi bi-check text-success"></i>Profil freelance</li>
+            <li><i class="bi bi-check text-success"></i>Accés au projet</li>
+            <li><i class="bi bi-x text-danger"></i>Support prioritaire</li>
+            <li><i class="bi bi-x text-danger"></i>Mise en avant</li>
+         </ul>
+         <button class="btn btn-outline-warning mt-3">Choisir ce plan</button>
+         </div>
+      </div>
+      <!--pro-->
+      <div class="col-md-4 mb-4">
+         <div class="card pricing-card p-4 position-relative popular">
+            <span class="badge bg-warning badge-pop">Populaire</span>
+         <h2 class="text-warning">Premuim</h2>
+         <h4 class="text-warning">20£/mois</h4>
+         <ul class="list-unstyled features mt-3">
+            <li><i class="bi bi-check text-success"></i>Tout du plan gratuit</li>
+            <li><i class="bi bi-check text-success"></i>Support prioritaires</li>
+            <li><i class="bi bi-check text-success"></i>Mise en avant</li>
+            <li><i class="bi bi-x text-danger"></i>Gestion dédiés</li>
+         </ul>
+         <button class="btn btn-outline-warning mt-3 ">Choisir ce plan</button>
+         </div>
+      </div>
+      <!--Entreprises-->
+      <div class="col-md-4 mb-4">
+         <div class="card pricing-card p-4">
+         <h2 class="text-warning">Entreprise</h2>
+         <h4 class="text-warning">49£/mois</h4>
+         <ul class="list-unstyled features mt-3">
+            <li><i class="bi bi-check text-success"></i>Toutes les fonctionnalités</li>
+            <li><i class="bi bi-check text-success"></i>Support prioritaire</li>
+            <li><i class="bi bi-x text-danger"></i>Support 24/7</li>
+            <li><i class="bi bi-x text-danger"></i>Analyse Avancés</li>
+         </ul>
+         <button class="btn btn-outline-warning mt-3">Choisir ce plan</button>
+         </div>
+      </div>
+      </div>
+      <!--FAQ-->
+      <h3 class="text-center text-warning mt-5 mb-4">FAQ</h3>
+      <div class="accordion" id="faq">
+      <div class="accordion-item">
+         <h2 class="accordion-header">
+         <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q1">Comment fonctionne la plateforme?</button>
+         </h2>
+         <div class="accordion-collapse colllapse show" id="q1">
+         <div class="accordion-body">
+         Vous pouvez trouvez ou proposez des services freelances facilement.
+         </div>
+         </div>
+      </div>
+      <div class="accordion-item">
+       <h2 class="accordion-header">
+        <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q2">Puis-je changer de plan?</button>
+       </h2>
+       <div class="accordion-collapse colllapse show" id="q2">
+        <div class="accordion-body">
+        Oui,vous pouvez changer à tout moment.
+        </div>
+       </div>
+      </div>
+       <div class="accordion-item">
+       <h2 class="accordion-header">
+        <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q3">Le paiement est-il sécurisé?</button>
+       </h2>
+       <div class="accordion-collapse colllapse show" id="q3">
+        <div class="accordion-body">
+        Oui,toutes les transactions sont sécurisées.
+        </div>
+       </div>
+      </div>
+       <div class="accordion-item">
+       <h2 class="accordion-header">
+        <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q4">Puis-je annuler à tout moment?</button>
+       </h2>
+       <div class="accordion-collapse colllapse show" id="q4">
+        <div class="accordion-body">
+        Oui,sans engagement.
+        </div>
+       </div>
+      </div>
+       <div class="accordion-item">
+       <h2 class="accordion-header">
+        <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q5">Les freelances sont-ils vérifiés?</button>
+       </h2>
+       <div class="accordion-collapse colllapse show" id="q5">
+        <div class="accordion-body">
+        Oui,chaque profil est validé.
+        </div>
+       </div>
+      </div>
+     </div>
+  </div>
+  <footer>
+    <div class="text-center" >
+        <p>&copy;<span id="year"></span>AfriTalent.Tous droits réservés</p>
+      </div>
+  </footer>
+</main>
 
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 

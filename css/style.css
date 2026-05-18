@@ -14,12 +14,14 @@
 
 } 
 /*entête*/
-.body-accueil{
+.body-accueil,html{
     background-color: var(--background-color);
     font-size: large;
     font-family: var(--font-family);
-    padding-top: 80px;
+    padding-top: 60px;
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -30,12 +32,12 @@ body{
 .ffixed{
     padding-top: 110px;
 }
-.navbar-button button{
+.navbar-button .button{
     background-color: #2c3c80; 
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 20px; 
+    border-radius: 5px; 
     cursor: pointer;
     
 }
@@ -93,10 +95,11 @@ button{
 /*About*/
 .notre-histoire{
     background-color: rgb(240, 230, 247);
+    margin-top: 0px;
 }
 .notre-histoire-text h1{
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: rgb(75, 4, 141);
     font-weight: bold;
 }
@@ -111,8 +114,10 @@ button{
     margin-bottom: 10px;
     border: 3px solid rgb(179, 189, 221);
 }
-.body{
+.body,html{
     background-color: white;
+    overflow-x: hidden;
+    width: 100%;
 }
 .mt-5{
     color:  rgb(75, 4, 141);
@@ -239,6 +244,7 @@ h2 ,h3{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+
 }
 /*différent tailles*/
 .marche-card.large{
@@ -353,6 +359,7 @@ label{
     font-weight: bold;
 }
 /*footer*/
+
 .footer h4 {
     margin-bottom: 15px;
     color:  rgb(89, 186, 231);;
@@ -376,4 +383,55 @@ label{
 }
 .social-icons a:hover{
     color: #0d6efd;
-}    
+}
+/*Medias Queries*/
+/*Tablette:ecrans de 768px et moins*/
+@media (max-width:768px){
+    .hero h1,.notre-histoire h1{
+        font-size: 1.8rem;
+    }
+} 
+
+/*Mobile: ecrans de 375px et moins*/
+ @media (max-width :375px){
+    .hero-image,.histoire-img{
+        display: none;
+    }
+    .hero h1,.notre-histoire h1{
+        font-size: 1.5rem;
+    }
+    .hero,.notre-histoire{
+        padding: 4rem 1rem;
+        min-height: 50vh;
+    }
+    .marche-grid ,.service-grid{
+        grid-template-columns: 1fr;
+    }
+    .marche-card ,.service-card{
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+    }
+    .service-card{
+        padding-bottom: 0px;
+    }
+    .marche-card h3{
+        font-size: 24px;
+    }
+     .marche-card p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .hero-text, button{
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+} 
+/*Ordinateur: ecrans de 1200px et plus*/
+@media (min-width:1200px){
+    /* titre plus grand sur grand ecrans*/
+    .hero h1,.notre-histoire h1{
+        font-size: 1.8rem;
+    }
+}  

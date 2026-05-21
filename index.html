@@ -22,8 +22,9 @@
               <img src="IMG/logo afri.jpeg" alt="img" width="100" height="70px" class="me-2 rounded" ></a>
             
           <!-- Bouton hamburger (visible sur petits écrans) -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
-          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle-navigation">
+          <button class="btn btn-light navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#menuNav"
+          aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
   
@@ -38,12 +39,16 @@
             <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
             <a class="navbar-button" href="#"><button>rejoindre afritalent</button></a>
             </ul>
-          </div>
+            
         </div>
       </nav>
     </div>
   </header>
   <main>
+    <!--boutton retour en haut-->
+    <div class="btnn">
+        <img src="IMG/arraw up.png" alt="img" class="icone">
+    </div>
     <!--présentation-->
     <section class="hero" >
         <div class="hero-text">
@@ -51,7 +56,10 @@
           <p>AfriTalent connecte les freelances africains aux clients du monde entier.Mon approche repose sur une communication
             claire,une bonne compréhension de vos attentes et une excécution soignée à chaque étape.
             </p>
-        <a href="freelance.html"><button class="button">Découvrir les talents</button></a>
+        <div class=" hero-buttons d-flex justify-centent-center gap-2 mb-5 ">
+                  <a href="freelance.html" class="btn btn-lg  me-2 " style="background-color:#2c3c80; color: white;">Je suis Freelance</a>
+                  <a href="freelance.html" class="btn btn-lg btn-outline-secondary">Je cherche un Freelance</a>
+                </div>
         </div>
             <img src="IMG/afrik.jpeg" alt="img" class="hero-image">
     </section>

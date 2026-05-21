@@ -48,23 +48,20 @@ body{
 .bg{
     background-color:  rgb(235, 243, 250);
 }
-/* css javascript*/
-/*.navbar.scrolled{
-    background-color: rgb(135, 190, 235);
-    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
-}
-.navbar-nav{
-    gap: 10px;
-}
 .nav-link:hover{
     color: blue;
+} 
+.btn-light{
+    background-color:rgb(235, 243, 250);
+    color: black;
 }
+
 /*section hero et notre histoire*/
 .hero , .notre-histoire{
     display: flex;
     align-items: center;
     padding: 60px 8%;
-    gap: 90px;
+    gap: 60px;
 }
 
 .hero-text h1{
@@ -78,7 +75,7 @@ body{
     font-size: 20px;
 }
 .hero-image{
-    width: 40%;
+    width: 35%;
     border-radius: 20px;
     margin-bottom: 10px;
     border: 3px solid rgb(179, 189, 221);
@@ -155,7 +152,7 @@ button{
 
 /*grid service*/
 .cmt{
-     text-align: center;
+    text-align: center;
     padding: 40px 10px ;
 }
 .service{
@@ -219,7 +216,7 @@ h2 ,h3{
 .service h4{
     color:black;
 }
-/*bento grid */
+/*bento grid comment ça marche*/
 .marche{
     text-align: center;
     background-color: #f9f9f9; 
@@ -234,7 +231,7 @@ h2 ,h3{
     margin: 0 auto;
 }
 .marche-card{
-     background-color: white;
+    background-color: white;
     border-radius: 12px;   
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
@@ -385,12 +382,21 @@ label{
     color: #0d6efd;
 }
 /*Medias Queries*/
+
 /*Tablette:ecrans de 768px et moins*/
-@media (max-width:768px){
+@media (max-width:768px) {
     .hero h1,.notre-histoire h1{
         font-size: 1.8rem;
     }
+
+    .hero .btn{
+        font-size: 18px;
+        padding: 8px 10px;
 } 
+.hero-image{
+    width: 180px;
+}
+}
 
 /*Mobile: ecrans de 375px et moins*/
  @media (max-width :375px){
@@ -422,16 +428,70 @@ label{
         font-size: 16px;
         line-height: 1.5;
     }
-    .hero-text, button{
+    .hero-text{
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .btn{
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+    .body-accueil{
+        padding-top: 30px;
+    }
 } 
+.hero-buttons .btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    min-width: 220px;
+    width: auto;
+    white-space: nowrap;
+}
 /*Ordinateur: ecrans de 1200px et plus*/
 @media (min-width:1200px){
     /* titre plus grand sur grand ecrans*/
     .hero h1,.notre-histoire h1{
         font-size: 1.8rem;
     }
-}  
+
+} 
+
+/* css javascript navbar scrolled*/
+.navbar.scrolled{
+    background-color:rgb(218, 234, 248);
+    box-shadow: 0 2px 10px rgba(1,1,1, 0.3);
+}
+.navbar-nav{
+    gap: 10px;
+}
+/*boutton retour en haut*/
+.btnn{
+    height: 40px;
+    width: 40px;
+    background-color:  #6d7dc4;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+.icone{
+    width: 60px;
+    color: white;
+}
+.btnn.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

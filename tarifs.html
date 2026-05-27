@@ -13,7 +13,7 @@
     <!--google font-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: white;">
     <!--l'entête-->
         <header>
             <!-- Navbar responsive -->
@@ -21,6 +21,7 @@
             <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                 <img src="IMG/logo afri.jpeg" alt="img"  width="100" height="70" class="me-2 rounded"></a>
+                   <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
 
       <!-- Bouton hamburger (visible sur petits écrans) -->
          <button class=" btn btn-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
@@ -44,12 +45,12 @@
    </div>
    </header>
 <main class="fixed">
-   <div class="container py-5">
+   <div class="container fade-in py-5">
       <h2 class="text-center text-warning mb-5">Nos tarifs</h2>
       <div class="row text-center">
       <!--gratuit-->
       <div class="col-md-4 mb-4 ">
-         <div class="card pricing-card p-4 bg-white">
+         <div class="card pricing-card p-4">
          <h2 class="text-warning ">Gratuit</h2>
          <h4 class="text-warning">0£/mois</h4>
          <ul class="list-unstyled features mt-3">
@@ -93,7 +94,7 @@
       </div>
       <!--FAQ-->
       <h3 class="text-center text-warning mt-5 mb-4">FAQ</h3>
-      <div class="accordion" id="faq">
+      <div class="accordion fade-in" id="faq">
       <div class="accordion-item">
          <h2 class="accordion-header">
          <button class="accordion-button bg-warning" data-bs-toggle="collapse" data-bs-target="#q1">Comment fonctionne la plateforme?</button>
@@ -148,7 +149,7 @@
   </div>
   <footer>
     <div class="text-center mt-4" >
-        <p>&copy;<span id="year"></span>AfriTalent 2026.Tous droits réservés</p>
+        <p>&copy;<span id="year"></span>AfriTalent.Tous droits réservés</p>
       </div>
   </footer>
 </main>

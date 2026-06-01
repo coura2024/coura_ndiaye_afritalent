@@ -559,7 +559,6 @@ label{
     .body-accueil{
         padding-top: 90px;
     }
-
 } 
 
 /* css javascript navbar scrolled*/
@@ -584,6 +583,7 @@ label{
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
+    z-index: 9999;               /* pour être devant */
     transform: translateY(10px);
     transition: 0.3s ease;
 }
@@ -618,4 +618,28 @@ label{
 .fade-in.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+/*css formulaire*/
+.error{
+    color: red;
+    font-size: 14px;
+}
+.success{
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+input.error-border,textarea.error-border{
+    border: 2px solid red;
+}
+input.success-border,textarea.success-border{
+    border: 2px solid green;
+}
+/*dégradé de h1*/
+.gradient-text{
+    background : linear-gradient(90deg ,#3893e2,#ad61f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }

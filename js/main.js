@@ -85,6 +85,7 @@ const observer = new IntersectionObserver(entries=>{
 sections.forEach(section=>{
     observer.observe(section);
 });
+
 // js date
 document.getElementById("year").textContent=new Date().getFullYear();
 
@@ -103,9 +104,7 @@ buttons.forEach(button=>{
 });
 
 // validation du formulaire 
-/*document.getElementById("contactForm").addEventListener("submit",function(e){
-    e.preventDefault();*/
-    let form = document.getElementById("contactForm");
+let form = document.getElementById("contactForm");
     if(form){
     form.onsubmit = (e) => {
         e.preventDefault();

@@ -1,7 +1,7 @@
 *{
-  margin: 0;  
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --couleur-fond: #1a1a2a;
@@ -27,7 +27,10 @@
 .dark-mode .navbar{
     background-color: rgba(15,23,42,0.95);
 }
-.dark-mode button{
+.dark-mode .carousel-control-prev{
+    background-color: #3b82f6;
+}
+.dark-mode .carousel-control-next{
     background-color: #3b82f6;
 }
 body.dark-mode{
@@ -89,6 +92,15 @@ body.dark-mode{
 .service-card h4{
     color: #363636 !important;
 }
+.marche-card h4,
+.marche-card p{
+    color: #363636 !important;
+}
+.dark-mode .marche-card h4,
+.dark-mode .marche-card p{
+    color: white!important;
+}
+
 .dark-mode .mb-3 input{
     background-color: #1e293b !important;
     color: #e2e8f0 ;
@@ -105,6 +117,13 @@ body.dark-mode{
     background-color: #1e293b !important;
     color: #e2e8f0 ;
 }
+.dark-mode,.marche-card,h3{
+    color: #e2e8f0 ;
+}
+.dark-mode .navbar-toggler{
+    background-color: #6082b8;
+}
+
 /*entête*/
 
 body,html{
@@ -142,6 +161,25 @@ body{
     background-color:rgb(235, 243, 250);
     color: black;
 }
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+}
+.navbar-brand span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg,#5145f7,#60a5fa,#a78bfa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /*section hero et notre histoire*/
 .hero , .notre-histoire{
@@ -176,8 +214,8 @@ button{
     cursor: pointer;
     font-weight: bold;
 }
-/*About*/
 
+/*About*/
 .notre-histoire-text h1{
     font-size: 40px;
     margin-bottom: 40px;
@@ -195,11 +233,7 @@ button{
     margin-bottom: 10px;
     border: 3px solid rgb(179, 189, 221);
 }
-/*.body,html{
-    background-color: white;
-    overflow-x: hidden;
-    width: 100%;
-}*/
+
 .mt-5{
     color:  rgb(75, 4, 141);
 }
@@ -237,7 +271,6 @@ button{
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
-
 
 /*grid service*/
 .cmt{
@@ -299,7 +332,7 @@ button{
 }
 
 h2 ,h3{
- color: rgb(85, 85, 235);
+    color: rgb(85, 85, 235);
 }
 .service h4{
     color: var(--text-color);
@@ -311,7 +344,7 @@ h2 ,h3{
     padding: 10px 10px;
 }
 .marche-grid{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr); /*pour dire de combien de colonnes*/
     gap: 20px;
     padding: 20px;
@@ -319,7 +352,6 @@ h2 ,h3{
     margin: 0 auto;
 }
 .marche-card{
-
     border-radius: 12px;   
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
@@ -329,7 +361,6 @@ h2 ,h3{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-
 }
 /*différent tailles*/
 .marche-card.large{
@@ -340,7 +371,7 @@ h2 ,h3{
     grid-column: span 2;
 }
 .marche-card.tall{
-     grid-column: span 2;
+    grid-column: span 2;
 }
 .marche img{
     width: 50px; 
@@ -491,7 +522,7 @@ label{
 }
 
 /*Mobile: ecrans de 375px et moins*/
- @media (max-width :375px){
+@media (max-width :375px){
     .hero-image,.histoire-img{
         display: none;
     }
@@ -516,7 +547,7 @@ label{
     .marche-card h3{
         font-size: 24px;
     }
-     .marche-card p{
+    .marche-card p{
         font-size: 16px;
         line-height: 1.5;
     }
@@ -532,8 +563,8 @@ label{
         font-size: 18px;
         padding: 8px 10px;
     }
-    .body-accueil{
-        padding-top: 30px;
+    body, .body-accueil{
+        padding-top: 5px;
     }
     .bg{
         padding-top: 10px;
@@ -541,15 +572,12 @@ label{
     .bento{
         grid-template-columns: 1fr;
     }
+    .logo{
+        display: none;
+    }
+    
 } 
-.hero-buttons .btn{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    min-width: 220px;
-    width: auto;
-    white-space: nowrap;
-}
+
 /*Ordinateur: ecrans de 1200px et plus*/
 @media (min-width:1200px){
     /* titre plus grand sur grand ecrans*/
@@ -565,6 +593,10 @@ label{
 .navbar.scrolled{
     background-color:rgb(218, 234, 248);
     box-shadow: 0 2px 10px rgba(1,1,1, 0.3);
+}
+.dark-mode .navbar,
+.dark-mode .scrolled{
+    background-color: #0f1830;
 }
 .navbar-nav{
     gap: 10px;
@@ -598,10 +630,9 @@ label{
 }
 /* Dark/lightmode*/
 #toggleDark{
-    font-size: 24px;
+    font-size: 1rem;
     cursor: pointer;
-    color: #6515fa;
-    background-color: rgba(255,255,255,0.15);
+    color: #1d054b;
     padding: 10px;
     border-radius: 30%;
     transition: 0.3s ease;
@@ -609,6 +640,16 @@ label{
     align-items: center;
     justify-content: center;
 }
+.theme-btn{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin-left: 20px;
+}
+.theme-btn i{
+    font-size: 1.2rem;
+}
+
 /* css du fade-in*/
 .fade-in{
     opacity: 0;

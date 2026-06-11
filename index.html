@@ -16,11 +16,14 @@
   <!--l'entête-->
     <header>
         <!-- Navbar responsive -->
-          <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
-              <img src="IMG/logo afri.jpeg" alt="img" width="100" height="70px" class="me-2 rounded"></a>
-                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+              <img src="IMG/logoafri.jpeg" alt="img"  width="100" height="70" class="logo me-2 rounded">
+            <span>AfriTalent</span>
+          </a>
+        <button type="button" class="btn btn-outline-primary theme-btn">
+              <i class="bi bi-brightness-high-fill" id="toggleDark"></i></button> 
           <!-- Bouton hamburger (visible sur petits écrans) -->
           <button class="btn btn-light navbar-toggler" type="button"
           data-bs-toggle="collapse" data-bs-target="#menuNav"
@@ -35,10 +38,10 @@
             <li class="nav-item"><a class="nav-link " href="freelance.html">Freelance</a></li>
             <li class="nav-item"><a class="nav-link " href="tarifs.html">Tarifs</a></li>
             <li class="nav-item"><a class="nav-link "  href="about.html">À propos</a></li>
-            <li class="nav-item"><a class="nav-link " href="contact.htmll">Contact</a></li>
-            <li class="nav-item"><a class="nav-link " href="#">Blog</a>
-            <button><a class="navbar-button" href="#">rejoindre afritalent</a></button></li>
-            </ul>
+            <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
+            <a class="navbar-button" href="#"> <button>rejoindre afritalent</button></a>
+          </ul>
         </div>
       </div>
     </nav>
@@ -46,7 +49,7 @@
   <main>
     <!--boutton retour en haut-->
     <div class="btnn">
-        <img src="IMG/arraw up.png" alt="img" class="icone">
+        <img src="IMG/arrawup.png" alt="img" class="icone">
     </div>
     <!--présentation-->
     <section class="hero" >
@@ -86,21 +89,21 @@
     <h2 class="cmt">Comment ça marche</h2>
     <div class="marche-grid">
       <!--gros bloc-->
-      <div class="marche-card large">
-        <img src="IMG/ecoute.jpeg" alt="img">
+      <div class="marche-card large"> 
+        <img src="IMG/ecoute.jpeg" alt="img" class="rounded">
         <h4>01.Immersion et écoute</h4>
         <p>Nous avons retracé ensemble les étapes de sa reconversion .Ce recit est automatique,donnant aux visiteurs une compréhension immédiate de votre 
       parcours et de votre personnalité.</p>
       </div>
       <!--petit bloc-->
       <div class="marche-card wide">
-        <i class="bi bi-megaphone "></i>
+        <img src="IMG/design.jpeg" alt="img" class="rounded">
         <h4>02.Publiez votre projet</h4>
         <p>Décrivez votre projet .</p>
       </div>
       <!--bloc moyen-->
       <div class="marche-card tall">
-        <img src="IMG/plateforme.jpeg" alt="img">
+        <img src="IMG/plateforme.jpeg" alt="img" class="rounded">
         <h4>03.Collaborez facilement</h4>
         <p>Travallez efficacement et suivezl'avancement du projet.</p>
       </div>
@@ -119,7 +122,7 @@
         <p>+190 freelances</p>
       </div>
       <div class="service-card ui">
-        <img src="IMG/design ui ux.jpeg" alt="img" >
+        <img src="IMG/designuiux.jpeg" alt="img" >
         <h4>Design UI/UX</h4>
         <p>+60 freelances</p>
       </div>
@@ -129,7 +132,7 @@
         <p>+90 freelances</p>
       </div>
       <div class="service-card data">
-      <img src="IMG/Data et ia.jpeg" alt="img">
+      <img src="IMG/Dataetia.jpeg" alt="img">
         <h4>Data et IA</h4>
         <p>+50 freelances</p>
       </div>
@@ -145,7 +148,7 @@
       </div>
     </div>
     </section>
-   
+
       <!--section témoignage boostrapcarousel-->
     <section class="testimonials fade-in container py-5">
     <h2 class="text-center mb-4 ">Témoignages</h2>
@@ -154,7 +157,7 @@
         <!--temoignage1-->
         <div class="carousel-item active">
           <div class="card text-center p-4">
-            <img src="IMG/femme.jpeg" class="rounded-circle mx-auto mb-3">
+            <img src="IMG/femme.jpeg" alt="img" class="rounded-circle mx-auto mb-3">
             <h4>Rokhaya Sene</h4>
             <small>Ceo-startup</small>
             <p class="mt3">"service incroyable ,trés importante et rapide".</p>
@@ -170,7 +173,7 @@
         <!--temoignage2-->
         <div class="carousel-item ">
           <div class="card text-center p-4">
-            <img src="IMG/homme.jpeg" class="rounded-circle mx-auto mb-3">
+            <img src="IMG/homme.jpeg" alt="img" class="rounded-circle mx-auto mb-3">
             <h4>Adama Thiaw</h4>
             <small>Freelance Designer</small>
             <p class="mt3">"Plateforme trés utile pour trouver des clients rapidement".</p>
@@ -186,7 +189,7 @@
         <!--temoignage3-->
         <div class="carousel-item ">
           <div class="card text-center p-4">
-            <img src="IMG/hijab.jpeg" class="rounded-circle mx-auto mb-3">
+            <img src="IMG/hijab.jpeg" alt="img" class="rounded-circle mx-auto mb-3">
             <h4>Ndella Ndiaye</h4>
             <small>Entreprise</small>
             <p class="mt3">"Trés bonne expérience,je recommande fortement".</p>
@@ -228,7 +231,7 @@
       <div class="row">
         <!--colonne1:logoAfriTalent-->
         <div class="col-md-3">
-          <img src="IMG/logo afri.jpeg" class="rounded" alt="img"  width="100px" height="60px ">
+          <img src="IMG/logoafri.jpeg" class="rounded" alt="img"  width="90" height="60">
             <h4>AfriTalent</h4>
             <p>Plateforme qui connecte freelance et entreprises pour plus de 
               fiabilités.</p>
@@ -272,9 +275,8 @@
       </div>
     </div>
   </footer>
- 
 
-  </button>
+
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 <!-- Votre script JavaScript --> 
